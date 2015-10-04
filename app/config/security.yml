@@ -29,6 +29,7 @@ security:
                 login_path: /auth/login
                 check_path: /auth/login_check
                 default_target_path: /auth/profile
+                use_referer: true
 
             logout:    
                 path:           /auth/logout

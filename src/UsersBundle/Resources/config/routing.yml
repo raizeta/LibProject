@@ -19,3 +19,7 @@ hwi_github_login:
 
 connect_github:
     pattern:   /connect/github/
+
+index:
+    path:     /index
+    defaults: { _controller: UsersBundle:UserManagement:index }

@@ -1,0 +1,9 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}UsersBundle:UserManagement:index{% endblock %}
+
+{% block body %}
+{% for entities in entities %}
+	{{entities.username}} {{entities.email}}<br/>
+{% endfor %}
+{% endblock %}
