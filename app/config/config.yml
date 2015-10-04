@@ -139,3 +139,15 @@ knp_paginator:
         #pagination: KnpPaginatorBundle:Pagination:sliding.html.twig` (by default)
         pagination: KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig
         #pagination: KnpPaginatorBundle:Pagination:twitter_bootstrap_pagination.html.twig
+
+knp_menu:
+    # use "twig: false" to disable the Twig extension and the TwigRenderer
+    twig:
+        template: knp_menu.html.twig
+    #  if true, enables the helper for PHP templates
+    templating: true
+    # the renderer to use, list is also available by default
+    default_renderer: twig
+    providers:
+        builder_alias: false    # disable the builder-based provider
+        container_aware: true
