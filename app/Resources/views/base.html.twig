@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}
-        <link rel="text/stylesheet" href="{{asset('libproject/dist/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('libproject/dist/css/bootstrap.css',absolute=true)}}">
     {% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
@@ -12,7 +12,8 @@
     {% block body %}
     {% endblock %}
     {% block javascripts %}
-        <script src="{{asset('libproject/dist/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('libproject/jquery/jquery-1.9.1.min.js',absolute=true)}}"></script>
+        <script src="{{asset('libproject/dist/js/bootstrap.min.js',absolute=true)}}"></script>
     {% endblock %}
 </body>
 </html>

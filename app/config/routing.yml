@@ -2,10 +2,6 @@ users_bundle:
     resource: "@UsersBundle/Resources/config/routing.yml"
     prefix:   /auth
 
-entity_bundle:
-    resource: "@EntityBundle/Resources/config/routing.yml"
-    prefix:   /
-
 _liip_imagine:
     resource: "@LiipImagineBundle/Resources/config/routing.xml"
 
