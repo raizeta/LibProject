@@ -86,6 +86,12 @@ fos_user:
     registration:
         confirmation:
             enabled:    false
+        form:
+            type: entitybundle_userregistration
+    profile:
+        form:
+            type: entitybundle_userprofile
+
 
 hwi_oauth:
     firewall_name: main
@@ -151,3 +157,15 @@ knp_menu:
     providers:
         builder_alias: false    # disable the builder-based provider
         container_aware: true
+
+
+vich_uploader:
+    db_driver: orm
+    mappings:
+        user_image:
+            uri_prefix:         /images/users
+            upload_destination: %kernel.root_dir%/../web/images/users
+
+            inject_on_load:     false
+            delete_on_update:   false
+            delete_on_remove:   true

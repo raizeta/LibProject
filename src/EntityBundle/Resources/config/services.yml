@@ -1,4 +1,11 @@
 services:
-#    entity.example:
-#        class: EntityBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    entity.form.registration:
+        class: EntityBundle\Form\RegistrationType
+        tags:
+            - { name: form.type, alias: entitybundle_userregistration } 
+            # alias = you get from your form function getname()
+
+    entity.form.profile:
+        class: EntityBundle\Form\ProfileFormType
+        tags:
+            - { name: form.type, alias: entitybundle_userprofile } 
